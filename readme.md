@@ -1,11 +1,27 @@
-Resources:
-https://www.philschmid.de/dpo-align-llms-in-2024-with-trl
+# RLHF Hackathon
 
+Welcome to the RLHF Hackathon repository! In this repo, we present several Jupyter notebooks to provide hands-on RLHF training. By the end of this hackathon, you will become familiar with basic RLHF techniques and be able to train a large language model (LLM) using Direct Policy Optimization (DPO) and Proximal Policy Optimization (PPO). Given that resources for a real LLM may not be available to everyone, we use the Phi-3 model and the unsloth library, allowing fine-tuning on a single GPU. The notebooks have been tested on an ml.g5.2xlarge instance.
 
+:warning: **Please note that Phi-3 is already fine-tuned over a vast number of datasets. Our work in these notebooks is solely for demonstration purposes.**
 
-TODO: Add acknowledgement to all notebooks
+## Notebooks
 
-presentation:
-1. we need to tell that the phi-3 is already fine-tuned on many datasets
-2. because of 1, we need only to fine tune the model with PEFT on small dataset
-3. Our task could be a very specific task like virtual Doctor and we want to add some descriptive information into the prompt
+### Supervised Fine-Tuning
+Notebook `01_SFT_with_unsloth` provides simple steps for performing supervised fine-tuning (SFT) using a dataset and preparing the records based on the LLM chat format.
+
+### Generate RLHF Dataset
+Notebook `02_RLHF_dataset` demonstrates how to gather feedback from humans. This notebook uses the previously fine-tuned LLM to generate different responses for the same prompt and then selects the best response based on human feedback.
+
+### DPO
+Notebook `03_DPO_with_unsloth` demonstrates how to use the DPO technique with the TRL library. It shows how to prepare the dataset for the LLM chat format and the DPOTrainer function.
+
+## Acknowledgement
+This Hackathon is part of the MHP internal Hackathon event series.
+
+## Resources
+1. [DPO - Align LLMs in 2024 with TRL by Phil Schmid](https://www.philschmid.de/dpo-align-llms-in-2024-with-trl)
+2. [unsloth GitHub repository](https://github.com/unslothai/unsloth)
+3. [Hugging Face TRL documentation](https://huggingface.co/docs/trl/en/index)
+
+## Contributors
+Alireza, Milos, Josefine
