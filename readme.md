@@ -15,6 +15,9 @@ Notebook `02_RLHF_dataset` demonstrates how to gather feedback from humans. This
 ### DPO
 Notebook `03_DPO_with_unsloth` demonstrates how to use the DPO technique with the TRL library. It shows how to prepare the dataset for the LLM chat format and the DPOTrainer function.
 
+## PPO
+The notebook `04_PPO` demonstrates how to use the PPO technique with the TRL library. In this notebook, we will show you how to perform RLHF using a reward model with GPT-2 as the base model.
+
 ## Acknowledgement
 This Hackathon is part of the MHP internal Hackathon event series.
 
@@ -22,6 +25,7 @@ This Hackathon is part of the MHP internal Hackathon event series.
 1. [DPO - Align LLMs in 2024 with TRL by Phil Schmid](https://www.philschmid.de/dpo-align-llms-in-2024-with-trl)
 2. [unsloth GitHub repository](https://github.com/unslothai/unsloth)
 3. [Hugging Face TRL documentation](https://huggingface.co/docs/trl/en/index)
+4. [PPO notebook](https://gist.github.com/bigsnarfdude/b4319115a8bd302d053d52729f262c62)
 
 ## Contributors
 Alireza, Milos, Josefine
